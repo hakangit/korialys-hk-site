@@ -53,20 +53,20 @@ function App() {
 
       {/* Hero Section */}
       <section id="home" className="hero">
-        <div className="hero-overlay"></div>
-        <div className="hero-content">
-          <h1>Peace of Mind, in a highly connected digital world.</h1>
-          <p className="hero-subtitle">Zero Trust Networks, Password Management, Identity Management & beyond.</p>
-          <a href="#about" className="btn btn-primary" onClick={(e) => scrollToSection(e, 'about')}>Learn More</a>
-        </div>
-        <div className="hero-video">
+        <div className="hero-video-bg">
           <iframe
-            src="https://www.youtube.com/embed/-_x6UStltfY?rel=0"
+            src="https://www.youtube.com/embed/-_x6UStltfY?autoplay=1&mute=1&loop=1&playlist=-_x6UStltfY&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1"
             title="Korialys Introduction"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
           ></iframe>
+        </div>
+        <div className="hero-overlay"></div>
+        <div className="hero-content">
+          <h1>Peace of Mind, in a highly connected digital world.</h1>
+          <p className="hero-subtitle">Zero Trust Networks, Password Management, Identity Management & beyond.</p>
+          <a href="#about" className="btn btn-primary" onClick={(e) => scrollToSection(e, 'about')}>Learn More</a>
         </div>
       </section>
 
