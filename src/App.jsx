@@ -139,24 +139,26 @@ function App() {
           <h2>Contact Us</h2>
           <p className="section-subtitle">Get in touch to discuss your security needs.</p>
 
-          <form className="contact-form" action="https://formspree.io/f/xpwzgvqr" method="POST">
-            <div className="form-group">
-              <label htmlFor="name">Name</label>
-              <input type="text" id="name" name="name" required />
+          <div className="contact-card">
+            <div className="contact-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
             </div>
-
-            <div className="form-group">
-              <label htmlFor="email">Email</label>
-              <input type="email" id="email" name="email" required />
-            </div>
-
-            <div className="form-group">
-              <label htmlFor="message">Message</label>
-              <textarea id="message" name="message" rows="5" required></textarea>
-            </div>
-
-            <button type="submit" className="btn btn-primary">Submit</button>
-          </form>
+            <h3>Send us an email</h3>
+            <p>We typically respond within 24 hours.</p>
+            <button
+              className="btn btn-primary"
+              onClick={() => {
+                // Email obfuscated to prevent spam harvesting
+                const a = 'nick'; const b = 'korialys'; const c = 'hk';
+                window.location.href = `mailto:${a}@${b}.${c}?subject=Inquiry from Korialys Website`;
+              }}
+            >
+              Contact Us
+            </button>
+          </div>
         </div>
       </section>
 
